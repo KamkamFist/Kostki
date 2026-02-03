@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage"
+             BackgroundColor="LightYellow">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label 
+                BackgroundColor="Brown" 
+                Text="Gra w kosci. Autor: 0000000000" 
+                FontSize="Medium"
+                TextColor="White"
+                Padding="10"></Label>
+            <Button 
+                x:Name="roll"
+                Margin="20"
+                    WidthRequest="150"
+                    BackgroundColor="Chocolate"
+                    Text="RZUĆ KOŚĆMI"
+                    Clicked="roll_clicked"></Button>
+
+
+            <Grid BackgroundColor="White"
+      ColumnDefinitions="*,*,*,*,*"
+      HorizontalOptions="Fill"
+      Padding="10">
+
+                <Image Grid.Column="0"
+                       x:Name="img1"
+           Source="question.jpg"
+           Aspect="AspectFit"
+           HeightRequest="60" />
+
+                <Image Grid.Column="1"
+                       x:Name="img2"
+           Source="question.jpg"
+           Aspect="AspectFit"
+           HeightRequest="60" />
+
+                <Image Grid.Column="2"
+                        x:Name="img3"
+           Source="question.jpg"
+           Aspect="AspectFit"
+           HeightRequest="60" />
+
+                <Image Grid.Column="3"
+                        x:Name="img4"
+           Source="question.jpg"
+           Aspect="AspectFit"
+           HeightRequest="60" />
+
+                <Image Grid.Column="4"
+                        x:Name="img5"
+           Source="question.jpg"
+           Aspect="AspectFit"
+           HeightRequest="60" />
+
+            </Grid>
+
+
+
+
+
+
+            <Label Text="Wynik tego losowania:" x:Name="now" HorizontalOptions="Center" Margin="10"></Label>
+            <Label Text="Wynik gry:" x:Name="total" HorizontalOptions="Center"></Label>
+
+            <Button 
+                x:Name="reset"
+                Margin="20"
+        WidthRequest="180"
+        BackgroundColor="Chocolate"
+        Text="RESETUJ WYNIK"
+                Clicked="reset_Clicked"></Button>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
